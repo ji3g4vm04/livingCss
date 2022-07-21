@@ -1,0 +1,31 @@
+@import "cssReset.css";
+
+img{
+  vertical-align: middle;
+}
+.wrap{
+  width: 640px;
+  margin: 0 auto;
+}
+.content{
+  font-style: 16px;
+  line-height: 1.5;
+}
+.title{
+  font-style: 20px;
+  line-height: 1.2;
+}
+.d-flex{
+  display: flex;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+section{
+  width: 288px;
+  padding:0 20px;
+}
+footer{
+  padding: 48px;
+  text-align: center;
+}
