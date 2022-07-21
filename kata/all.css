@@ -3,7 +3,7 @@
 img{
   vertical-align: middle;
 }
-.wrap{
+.container{
   width: 640px;
   margin: 0 auto;
 }
@@ -22,7 +22,6 @@ img{
   margin-bottom: 24px;
 }
 section{
-  width: 288px;
   padding:0 20px;
 }
 footer{
