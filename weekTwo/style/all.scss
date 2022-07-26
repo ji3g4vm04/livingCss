@@ -1,0 +1,104 @@
+@import "cssReset";
+@import "mode";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@600&family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+
+// color
+$white: #fff;
+$black: #000;
+$red: #891818;
+
+@mixin bg-black {
+  background: $black;
+  color: $white;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  cursor: pointer;
+}
+
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../week2Img/banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  .header-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 56px;
+  .about-list li:nth-child(n+5):nth-child(-n+7){
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: $red;
+      border-radius: 50%;
+      top: 50%;
+      transform: translate(-200%,-50%);
+    }
+  }
+  .border-b2{
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+}
+.brand{
+  @include bg-black();
+  padding: 56px 0 160px;
+  text-align: center;
+  .brand-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li:first-child{
+      width: 100%;
+    }
+  }
+}
+.works{
+  padding: 56px 0 144px;
+  .works-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .works-list{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 28px;
+      li img{
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+.contact{
+  padding: 64px;
+  @include bg-black();
+  text-align: center;
+  a{
+    color: $white;
+  }
+}
