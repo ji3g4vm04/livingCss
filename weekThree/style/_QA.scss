@@ -1,0 +1,25 @@
+@import "./variable.scss";
+
+.QA{
+  .QA-maintitle{
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border-left: 8px solid $color-red-bold;
+  }
+  .QA-subtitle{
+    margin-bottom: 24px;
+  }
+  ul{
+    li:not(:last-child){
+      margin-bottom: 32px;
+    }
+    li h2{
+      margin-bottom: 8px;
+    }
+  }
+}
+@media (max-width:573px) {
+  .QA .QA-maintitle{
+      margin-bottom: 24px;
+  }
+}

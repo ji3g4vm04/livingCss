@@ -1,0 +1,33 @@
+@import "variable.scss";
+
+.blog-header{
+  background: $color-red-bold;
+  .blog-header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul{
+    display: flex;
+    gap: 48px;
+    padding: 13px 0;
+    li{
+      a{
+        color: $color-white;
+      }
+    }
+  }
+  .blog-search{
+    color: $color-white;
+  }
+}
+@media (max-width:767px) {
+  .blog-header-nav ul{
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .blog-header .blog-search{
+    display: none;
+  }
+}

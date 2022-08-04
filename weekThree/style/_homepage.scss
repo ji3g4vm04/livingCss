@@ -1,0 +1,263 @@
+@import "variable";
+
+.banner{
+  height: 787px;
+  position: relative;
+  background: url("../img/home-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .banner-container{
+    text-align: end;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    h2,h3{
+      color: $color-red-bold;
+    }
+    h2{
+      margin-bottom: 4px;
+    }
+    button{
+      color: $color-white;
+      padding: 6px 12px;
+      background: $color-red;
+    }
+  }
+}
+@media (max-width:992px) {
+  
+}
+@media (max-width:767px) {
+  .banner{
+    background: url("../img/home-header-sm.png") no-repeat;
+    background-size: cover;
+  }
+}
+.pro{
+  background: $color-rice;
+  .pro-container{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .pro-title{
+      margin-bottom: 36px;
+      color: $color-red-bold;
+    }
+    .pro-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        width: 24%;
+        h2{
+          color: $color-red-bold;
+          margin-bottom: 8px;
+        }
+        img{
+          width: 83px;
+          margin-bottom: 24px;
+        }
+        p{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .pro{
+    .pro-container{
+      .pro-list{
+        li{
+          width: 49%;
+        }
+        li:not(:last-child){
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  .pro{
+    .pro-container{
+      .pro-list{
+        li{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.classic{
+  text-align: center;
+  padding: 80px 0;
+  h2{
+    color: $color-red-bold;
+    margin-bottom: 48px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      width: 31.3333%;
+      img{
+        margin-bottom: 8px;
+      }
+      h2{
+        color: $color-red;
+      }
+    }
+  }
+}
+@media (max-width:992px) {
+  .classic{
+    ul{
+      max-width: 336px;
+      margin: 0 auto;
+      li{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.joint{
+  background: url("../img/index-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 ;
+  .joint-container{
+    text-align: center;
+    .joint-title{
+      color: $color-white;
+      margin-bottom: 48px;
+    }
+    ul{
+      display: flex;
+      li{
+        h2{
+          background: $color-white;
+          color: $color-red;
+        }
+      }
+    }
+  }
+}
+@media (max-width:992px) {
+  .joint{
+    .joint-container{
+      ul{
+        flex-wrap: wrap;
+        li{
+          width: 100%;
+        }
+        li:first-child{
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  
+}
+
+.suggest{
+  padding: 80px 0;
+  .suggest-container{
+    .suggest-title{
+      text-align: center;
+      color: $color-red-bold;
+      margin-bottom: 48px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        width: 24%;
+        box-shadow: 0 0 3px #00000029;
+        .suggest-content{
+          padding: 16px;
+          h2:first-child{
+            margin-bottom: 8px;
+          }
+          p:last-child{
+            color: $color-gray-bold;
+            margin-top: 72px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:992px) {
+  .suggest{
+    .suggest-container{
+      ul{
+        flex-wrap: wrap;
+        row-gap: 24px;
+        li{
+          width: 49%;
+        }
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  .suggest{
+    .suggest-container{
+      ul{
+        li{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.contact{
+  background: $color-pink;
+  padding: 80px 0;
+  .contact-container{
+    max-width: 636px;
+    margin: 0 auto;
+    .contact-title{
+      margin-bottom: 48px;
+      color: $color-red-bold;
+      text-align: center;
+      & + p{
+        margin-bottom: 24px;
+      }
+    }
+    form{
+      h2{
+        margin-bottom: 8px;
+      }
+      input:not([type="checkbox"]),textarea{
+        background: $color-pink;
+        display: block;
+        width: 100%;
+        border: 1px solid #000;
+      }
+      .contact-form-container:nth-child(-n+4){
+        margin-bottom: 16px;
+      }
+      .contact-form-container:nth-child(5){
+        margin-bottom: 48px;
+      }
+      .contact-form-submit{
+        margin: 0 auto;
+        max-width: 416px;
+        color: $color-white;
+        padding: 16px 0;
+        background: $color-red !important;
+        border: none !important;
+      }
+    }
+  }
+}

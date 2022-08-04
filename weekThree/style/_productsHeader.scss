@@ -1,0 +1,51 @@
+@import "./variable.scss";
+
+// 商品頁表頭
+.products-header{
+  .products-header-menu,.products-header-imgs{
+    display: flex;
+  }
+  .products-header-menu{
+    max-width: 1296px;
+    margin: 0 auto;
+    li{
+      width: 33.3333%;
+      text-align: center;
+      border-right: 1px solid $color-gray;
+      border-left: 1px solid $color-gray;
+      border-bottom: 8px solid $color-white;
+      a{
+        display: block;
+        color: $color-black;
+        padding: 24px 0;
+      }
+      &:hover{
+        border-bottom: 8px solid $color-red;
+      }
+    }
+    .border-bot-red{
+      border-bottom: 8px solid $color-red;
+    }
+  }
+  .products-header-imgs{
+    img{
+      width: 50%;
+    }
+    .img-sm{
+      display: none;
+    }
+  }  
+}
+@media (max-width:992px) {
+  .products-header{
+    .products-header-imgs img{
+      height: 296px;
+    }
+    .img-l{
+      display: none;
+    }
+    .img-sm{
+      display: block !important;
+    }
+  }
+}

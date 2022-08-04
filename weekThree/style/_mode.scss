@@ -1,0 +1,130 @@
+
+
+// 字形設定
+@font-face{
+  font-family: custom-font;
+  src: url(fonts/NotoSansTC-Bold.otf);
+  unicode-range: U+4E00-9FFF;
+}
+@font-face{
+  font-family: custom-font;
+  unicode-range: U+00-024F;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+
+
+.container{
+  max-width: 1320px;
+  padding: 0 36px;
+  margin: 0 auto;
+}
+@media (max-width:573px) {
+  .container{
+  padding: 0 14px 0 13px;
+  }
+}
+// 字體大小
+
+@mixin font-style($fs,$lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+.fs-14{
+  @include font-style(14px,21px );
+}
+.fs-16{
+  @include font-style(16px,24px );
+}
+.fs-18{
+  @include font-style(18px,27px );
+}
+.fs-19{
+  @include font-style(19px,29px );
+}
+.fs-20{
+  @include font-style(20px,30px);
+}
+.fs-24{
+  @include font-style(24px,36px );
+}
+.fs-32{
+  font-size: 32px;
+  line-height: 48px;
+}
+.fs-36{
+  @include font-style(36px,54px );
+}
+.fs-42{
+  @include font-style(42px, 63px);
+}
+.fs-48{
+  @include font-style(48px,72px );
+}
+.fs-64{
+  @include font-style(64px,96px);
+}
+
+@media (max-width:767px){
+  .md-fs-14{
+    @include font-style(14px,21px );
+  }
+  .md-fs-16{
+    @include font-style(16px,24px );
+  }
+  .md-fs-20{
+    @include font-style(20px,30px);
+  }
+  .md-fs-24{
+    @include font-style(24px,36px );
+  }
+  .md-fs-36{
+    @include font-style(36px,54px );
+  }
+  .md-fs-48{
+    @include font-style(48px,72px );
+  }
+  .md-fs-64{
+    @include font-style(64px,96px);
+  }
+}
+@media (max-width:573px){
+  .sm-fs-14{
+    @include font-style(14px,21px );
+  }
+  .sm-fs-16{
+    @include font-style(16px,24px );
+  }
+  .sm-fs-20{
+    @include font-style(20px,30px);
+  }
+  .sm-fs-24{
+    @include font-style(24px,36px );
+  }
+  .sm-fs-36{
+    @include font-style(36px,54px );
+  }
+  .sm-fs-48{
+    @include font-style(48px,72px );
+  }
+  .sm-fs-64{
+    @include font-style(64px,96px);
+  }
+}
+
+
+// main tag用
+.default-margin{
+  margin: 96px 0 80px;
+}
+@media (max-width:992px) {
+  .default-margin{
+    margin: 80px 0;
+  }
+}
+
+@media (max-width:573px) {
+  .default-margin{
+    margin: 40px 0 64px;
+  }
+}
