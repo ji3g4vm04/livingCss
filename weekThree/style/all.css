@@ -190,6 +190,11 @@ footer .footer-contact h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 16px;
+}
+
+footer .footer-contact h2 a {
+  color: #fff;
 }
 
 footer .footer-bottom {
